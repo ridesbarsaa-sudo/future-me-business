@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101322">
+<title>FUTURE ME — Business Mode</title>
+<style>
+:root{color-scheme:dark;--bg:#101322;--panel:#1a2035;--panel2:#242d48;--text:#f4f6ff;--muted:#aab3d0;--lime:#c8ff61;--purple:#a99bff;--red:#ff8d9c;--gold:#ffd479}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#293253 0,#101322 56%);font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--text);min-height:100vh}button,input{font:inherit}button{cursor:pointer;border:0}.app{max-width:980px;margin:auto;padding:18px 15px 40px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.logo{font-weight:950;letter-spacing:2px}.logo span{color:var(--lime)}.pill{border:1px solid #424a69;border-radius:999px;padding:7px 10px;color:var(--muted);font-size:11px}.hero{padding:26px 22px;border-radius:24px;background:linear-gradient(130deg,#30385c,#1a2035 70%);border:1px solid #3c4669;position:relative;overflow:hidden}.eyebrow,.tag{color:var(--lime);font-size:11px;font-weight:850;letter-spacing:1.7px}.hero h1{font-size:clamp(34px,7vw,58px);line-height:1;letter-spacing:-2px;margin:12px 0}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{color:var(--muted);max-width:600px;line-height:1.65}.hero-art{font-size:78px;position:absolute;right:24px;bottom:10px;opacity:.2;pointer-events:none}.primary{background:var(--lime);color:#151b25;font-weight:900;border-radius:13px;padding:13px 17px;width:100%;margin-top:12px}.secondary{background:var(--panel2);color:var(--text);border:1px solid #414b6c;border-radius:12px;padding:10px 13px}.danger{background:#402735;color:#ffdbe1;border:1px solid #75404e;border-radius:12px;padding:10px 13px}.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:13px;margin-top:14px}.panel{background:var(--panel);border:1px solid #303954;border-radius:18px;padding:16px;min-width:0}.panel h2{font-size:17px;margin:0 0 12px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stat{background:#222a43;border-radius:14px;padding:12px}.stat small{display:block;color:var(--muted);font-size:11px}.stat strong{font-size:22px;display:block;margin-top:5px}.good{color:var(--lime)}.muted{color:var(--muted)}.bar{height:6px;background:#343d5a;border-radius:99px;overflow:hidden;margin-top:8px}.bar i{display:block;height:100%;background:var(--lime);width:0%;transition:width .25s}.products{display:grid;grid-template-columns:1fr 1fr;gap:9px}.product{background:#222a43;border:1px solid #394462;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:7px}.product .emoji{font-size:25px}.product b{font-size:14px}.product small{color:var(--muted);line-height:1.4}.product button{margin-top:auto;border-radius:10px;background:var(--lime);color:#151b25;font-weight:850;padding:10px 8px;font-size:12px}.product button:disabled{background:#424a60;color:#aab3c7;cursor:not-allowed}.section{margin-top:13px}.wide{grid-column:1/-1}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions button{flex:1}.feed{display:flex;flex-direction:column;gap:8px;max-height:245px;overflow:auto}.log{padding:10px 11px;background:#222a43;border-radius:11px;color:#dce2f6;font-size:13px;line-height:1.45}.log.goodlog{border-left:3px solid var(--lime)}.log.badlog{border-left:3px solid var(--red)}.log.neutral{border-left:3px solid var(--purple)}.notice{background:#252d45;border-left:3px solid var(--purple);padding:12px 13px;border-radius:9px;color:#dbe0f7;line-height:1.55;margin-top:12px;font-size:13px}.hidden{display:none!important}.footer{text-align:center;color:#77809d;font-size:12px;margin-top:22px}.modalback{position:fixed;inset:0;background:#050711cc;display:flex;align-items:center;justify-content:center;padding:18px;z-index:5}.modal{max-width:430px;width:100%;background:#1a2035;border:1px solid #475274;border-radius:20px;padding:21px;box-shadow:0 20px 80px #0008}.modal h2{margin-top:0}.modal label{display:block;color:var(--muted);font-size:13px;margin:12px 0 6px}.modal input{width:100%;padding:12px;border-radius:10px;border:1px solid #475274;background:#101322;color:var(--text)}.modal .actions{margin-top:14px}.mini{font-size:12px;color:var(--muted);line-height:1.5}.yearline{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:12px}
+@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.hero{padding:22px 17px}.hero-art{font-size:54px;right:8px}.stats{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:1fr 1fr}.top .pill{max-width:145px;text-align:center}.panel{padding:14px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="logo">FUTURE<span>ME</span> ✦</div><div class="pill">BUSINESS MODE · DEMO</div></header>
+<section class="hero" id="welcome">
+<div class="eyebrow">BUILD IT. LEARN IT. GROW IT.</div>
+<h1>Өөрийн <em>бизнесээ</em><br>бүтээ.</h1>
+<p>Чи ирээдүйн бизнес эрхлэгч. Бага хөрөнгөөр эхэлж, бүтээгдэхүүнээ сонгон, үйлчлүүлэгчтэй болж, орлого зарлагаа удирдаарай. Энэ бол сургалтын зориулалттай тоглоом — бодит мөнгө ашиглахгүй.</p>
+<div class="hero-art">↗ ₮</div>
+<button class="primary" id="begin">Бизнесээ эхлүүлэх →</button>
+</section>
+<div id="dashboard" class="hidden">
+<div class="yearline section"><span class="pill" id="yearPill">НАС 17 · 1/5 ЖИЛ</span><span class="pill" id="businessNamePill">Шинэ бизнес</span></div>
+<div class="layout">
+<section class="panel">
+<h2>📊 Бизнесийн самбар</h2>
+<div class="stats">
+<div class="stat"><small>💵 Бэлэн мөнгө</small><strong id="cash">₮150,000</strong><div class="bar"><i id="cashBar"></i></div></div>
+<div class="stat"><small>🧾 Нийт ашиг</small><strong id="profit">₮0</strong><div class="bar"><i id="profitBar"></i></div></div>
+<div class="stat"><small>😊 Нэр хүнд</small><strong id="rep">10/100</strong><div class="bar"><i id="repBar"></i></div></div>
+<div class="stat"><small>👥 Үйлчлүүлэгч</small><strong id="customers">0</strong><div class="bar"><i id="customerBar"></i></div></div>
+</div>
+<div class="notice" id="tip">Зөвлөгөө: эхлээд хэрэгцээтэй бүтээгдэхүүнээ сонгоод бага хэмжээгээр туршаарай.</div>
+</section>
+<section class="panel">
+<h2>🏪 Бизнесийн мэдээлэл</h2>
+<p class="mini">Бизнесийн нэр</p><h2 id="businessName">Шинэ бизнес</h2>
+<p class="mini">Таны зорилго: 5 жилийн дотор ашигтай, найдвартай бизнес байгуулах.</p>
+<div class="actions"><button class="secondary" id="rename">✏️ Нэр өөрчлөх</button><button class="secondary" id="save">💾 Хадгалах</button></div>
+<p class="mini" id="saveStatus">Явцаа энэ төхөөрөмжид хадгалж болно.</p>
+</section>
+<section class="panel wide">
+<h2>🛍️ Бараа сонгоод борлуул</h2>
+<p class="mini">Нэг удаагийн захиалга бүр эхлэх зардалтай. Үнэ, зардал, эрэлтээ харьцуул. Бараа бүрийн товчийг дарж нэг ээлжийн борлуулалт хийнэ.</p>
+<div class="products" id="products"></div>
+</section>
+<section class="panel">
+<h2>📣 Бизнесээ хөгжүүлэх</h2>
+<div class="product"><span class="emoji">📱</span><b>Сошиал сурталчилгаа</b><small>₮20,000 зарцуулна. Үйлчлүүлэгч олох, нэр хүнд өсгөх боломжтой.</small><button id="marketing">Сурталчлах · ₮20,000</button></div>
+<div class="product section"><span class="emoji">🧠</span><b>Ур чадвараа хөгжүүлэх</b><small>₮15,000 зарцуулна. Дараагийн борлуулалтад ашигтай шийдвэр гаргах боломж нэмэгдэнэ.</small><button id="training">Суралцах · ₮15,000</button></div>
+</section>
+<section class="panel">
+<h2>📜 Сүүлийн үйл явдал</h2><div class="feed" id="feed"><div class="log neutral">Бизнесээ эхлүүлээрэй. Энд борлуулалт, зардлын түүх гарна.</div></div>
+<div class="notice">Ёс зүйн дүрэм: худал мэдээлэл бүү тараа, чанараа шалга, үйлчлүүлэгчийн гомдолд шударгаар ханд.</div>
+</section>
+<section class="panel wide" id="yearPanel">
+<h2>🗓️ Жилийн төгсгөл</h2>
+<p class="mini" id="yearStory">Бизнесээ хөгжүүлж дууссаны дараа дараагийн жил рүү шилжээрэй.</p>
+<button class="primary" id="nextYear">Дараагийн жил рүү →</button>
+</section>
+<section class="panel wide hidden" id="finalPanel"></section>
+</div>
+</div>
+<div class="footer">FUTURE ME · Бодит амьдралд төсөв, судалгаа, хариуцлага чухал ✦</div>
+</div>
+<div class="modalback hidden" id="nameModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal"><h2 id="modalTitle">🏪 Бизнесээ нэрлэ</h2><p class="mini">Өөрийн брэндэд нэр өг. Дараа нь хүсвэл өөрчилж болно.</p><label for="nameInput">Бизнесийн нэр</label><input id="nameInput" maxlength="28" placeholder="Жишээ: Steppe Studio"><div class="actions"><button class="secondary" id="cancelName">Болих</button><button class="primary" id="confirmName" style="margin-top:0">Эхлэх</button></div></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const items=[
+{id:'accessory',e:'🎧',name:'Утасны аксессуар',cost:18000,price:30000,demand:0.78,desc:'Хямд, өдөр тутмын хэрэгцээтэй бараа.'},
+{id:'snack',e:'🥤',name:'Ундаа, зууш',cost:12000,price:20000,demand:0.88,desc:'Эрэлт боломжийн, нэг бүрийн ашиг бага.'},
+{id:'tee',e:'👕',name:'Streetwear футболк',cost:35000,price:55000,demand:0.58,desc:'Загвар, чанар, хэмжээг анхаар.'},
+{id:'digital',e:'💻',name:'Дижитал дизайн',cost:8000,price:35000,demand:0.48,desc:'Бага материалын зардалтай, чадвар шаарддаг.'}
+];
+let state={cash:150000,profit:0,rep:10,customers:0,year:0,biz:'Шинэ бизнес',sales:0,skill:0,started:false,history:[]};
+function money(n){return '₮'+Math.round(n).toLocaleString('en-US')}
+function log(text,kind='neutral'){state.history.unshift({text,kind});state.history=state.history.slice(0,12);renderFeed()}
+function renderFeed(){$('feed').innerHTML='';state.history.forEach(x=>{const el=document.createElement('div');el.className='log '+(x.kind==='good'?'goodlog':x.kind==='bad'?'badlog':'neutral');el.textContent=x.text;$('feed').appendChild(el)})}
+function update(){ $('cash').textContent=money(state.cash);$('profit').textContent=money(state.profit);$('rep').textContent=state.rep+'/100';$('customers').textContent=state.customers;$('cashBar').style.width=Math.min(100,state.cash/3000)+'%';$('profitBar').style.width=Math.min(100,Math.max(0,state.profit)/3000)+'%';$('repBar').style.width=state.rep+'%';$('customerBar').style.width=Math.min(100,state.customers*2)+'%';$('yearPill').textContent='НАС '+(17+state.year)+' · '+(state.year+1)+'/5 ЖИЛ';$('businessName').textContent=state.biz;$('businessNamePill').textContent=state.biz;renderProducts();renderFeed();$('marketing').disabled=state.cash<20000;$('training').disabled=state.cash<15000;$('nextYear').disabled=state.year>=4}
+function renderProducts(){$('products').innerHTML='';items.forEach(item=>{const el=document.createElement('div');el.className='product';el.innerHTML='<span class="emoji">'+item.e+'</span><b>'+item.name+'</b><small>'+item.desc+'</small><small>Өртөг: <b>'+money(item.cost)+'</b><br>Үнэ: <b>'+money(item.price)+'</b><br>Нэг бүрийн боломжит ашиг: <b class="good">'+money(item.price-item.cost)+'</b></small><button '+(state.cash<item.cost?'disabled':'')+'>Нэг ээлж борлуулах</button>';el.querySelector('button').onclick=()=>sell(item);$('products').appendChild(el)})}
+function sell(item){if(state.cash<item.cost){log('Мөнгө хүрэлцэхгүй. Эхлээд бага зардалтай бүтээгдэхүүн сонго эсвэл мөнгөө хуримтлуул.','bad');return}state.cash-=item.cost;let chance=item.demand+(state.rep-50)/250+state.skill*.006;chance=Math.max(.15,Math.min(.96,chance));let sold=Math.random()<chance; if(sold){let revenue=item.price;let bonus=Math.round(state.skill*120);let net=revenue-item.cost+bonus;state.cash+=revenue+bonus;state.profit+=net;state.customers+=Math.max(1,Math.round(1+state.rep/30));state.sales++;state.rep=Math.min(100,state.rep+2);log('Амжилттай борлуулалт: '+item.name+'. Орлого '+money(revenue)+', зардал '+money(item.cost)+', цэвэр ашиг '+money(net)+'.','good');$('tip').textContent='Сайн байна! Ашгаа тэмдэглэж, хэрэглэгчийн хэрэгцээг ажигла.'}else{state.profit-=item.cost;state.rep=Math.max(0,state.rep-1);log(item.name+' энэ удаа зарагдсангүй. '+money(item.cost)+'-ийн зардал гарлаа. Эрэлтээ судалж үзээрэй.','bad');$('tip').textContent='Борлуулалт бүр баталгаатай биш. Дараагийн удаа эрэлт, үнэ, зардлаа харьцуул.'}update()}
+function marketing(){if(state.cash<20000)return;state.cash-=20000;let reach= Math.random()<.78;state.rep=Math.min(100,state.rep+(reach?8:3));if(reach){state.customers+=3;state.profit-=20000;log('Сурталчилгаа үр дүнтэй байлаа! Нэр хүнд өсөж, 3 шинэ боломжит үйлчлүүлэгчтэй болов.','good')}else{state.profit-=20000;log('Сурталчилгаа төдийлөн үр дүн өгсөнгүй. Дараагийн удаа зорилтот хэрэглэгчээ тодорхойлоорой.','bad')}update()}
+function training(){if(state.cash<15000)return;state.cash-=15000;state.profit-=15000;state.skill=Math.min(10,state.skill+2);state.rep=Math.min(100,state.rep+2);log('Сургалтад хөрөнгө орууллаа. Ур чадвар +2, нэр хүнд +2.','good');$('tip').textContent='Мэдлэг бол урт хугацааны хөрөнгө оруулалт.';update()}
+function endYear(){if(state.year>=4)return;const upkeep=10000;state.cash-=upkeep;state.profit-=upkeep;if(state.cash<0)state.cash=0;let message='Жилийн тогтмол зардал '+money(upkeep)+' төллөө. Борлуулалтын тэмдэглэлээ шалгаж, дараагийн жилийн төлөвлөгөөг гарга.';if(state.sales>=3){state.rep=Math.min(100,state.rep+4);message='Чи энэ жил '+state.sales+' удаа борлуулалт хийжээ! Тогтвортой оролдлогын төлөө нэр хүнд +4. '+message}else{message='Энэ жил борлуулалт цөөн байлаа. Хэрэглэгчээс санал авч, барааны сонголтоо өөрчилж болно. '+message}log('Жил '+(state.year+1)+' дууслаа. '+message,'neutral');state.year++;state.sales=0;$('yearStory').textContent=message;if(state.year===4){$('nextYear').textContent='5 дахь жилийг дуусгах →'}if(state.year>=4){$('yearStory').textContent='Сүүлийн жилээ дуусгаад үр дүнгээ хар. '+message;$('nextYear').textContent='Төгсгөлийн үр дүнг харах →';$('nextYear').onclick=finish}update()}
+function finish(){ $('yearPanel').classList.add('hidden');$('finalPanel').classList.remove('hidden');let title=state.profit>=100000?'Өсөж буй бизнес эрхлэгч 🚀':state.profit>=0?'Туршлага хуримтлуулсан бүтээгч 🌱':'Дахин төлөвлөж, суралцах боломж ✨';$('finalPanel').innerHTML='<span class="tag">5 ЖИЛИЙН ДАРАА · НАС 22</span><h2 style="font-size:28px;margin:10px 0">'+title+'</h2><p class="mini">Бизнес: '+escapeHtml(state.biz)+'</p><div class="stats"><div class="stat"><small>Эцсийн мөнгө</small><strong>'+money(state.cash)+'</strong></div><div class="stat"><small>Нийт ашиг / алдагдал</small><strong>'+money(state.profit)+'</strong></div><div class="stat"><small>Нэр хүнд</small><strong>'+state.rep+'/100</strong></div><div class="stat"><small>Үйлчлүүлэгч</small><strong>'+state.customers+'</strong></div></div><div class="notice">Сургамж: ашигтай бизнес зөвхөн их мөнгөөр хэмжигдэхгүй. Зардлаа тооцох, хэрэглэгчээ сонсох, үнэнч шударга байх, алдаанаасаа суралцах нь чухал.</div><button class="primary" id="again">↻ Дахин тоглох</button>';$('again').onclick=()=>{localStorage.removeItem('futureMeBusinessSave');location.reload()}}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function save(){try{localStorage.setItem('futureMeBusinessSave',JSON.stringify(state));$('saveStatus').textContent='Хадгаллаа! Энэ браузер, төхөөрөмж дээр үргэлжлүүлж болно.'}catch(e){$('saveStatus').textContent='Хадгалж чадсангүй. Browser-ийн хадгалалтын тохиргоог шалга.'}}
+function load(){try{const raw=localStorage.getItem('futureMeBusinessSave');if(raw){const saved=JSON.parse(raw);if(saved&&typeof saved.cash==='number'&&Array.isArray(saved.history)){state={...state,...saved};return true}}}catch(e){}return false}
+$('begin').onclick=()=>{$('nameModal').classList.remove('hidden');$('nameInput').focus()};
+$('cancelName').onclick=()=>$('nameModal').classList.add('hidden');
+$('confirmName').onclick=()=>{const name=$('nameInput').value.trim();if(name)state.biz=name.slice(0,28);state.started=true;$('nameModal').classList.add('hidden');$('welcome').classList.add('hidden');$('dashboard').classList.remove('hidden');log('Бизнесээ эхлүүллээ! Эхний хөрөнгө '+money(state.cash)+'. Эхлээд нэг бүтээгдэхүүнээ турш.','good');update()};
+$('rename').onclick=()=>{const name=prompt('Бизнесийн шинэ нэр:',state.biz);if(name&&name.trim()){state.biz=name.trim().slice(0,28);update()}};
+$('save').onclick=save;$('marketing').onclick=marketing;$('training').onclick=training;$('nextYear').onclick=endYear;
+if(load()){ $('welcome').classList.add('hidden');$('dashboard').classList.remove('hidden');update();$('saveStatus').textContent='Өмнө хадгалсан тоглоом сэргээгдлээ.'}
+</script>
+</body>
+</html>
